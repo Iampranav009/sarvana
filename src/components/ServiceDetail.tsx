@@ -1,0 +1,14 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import type { ServicePageData } from "@/data/servicePages";
+import type { RealProject } from "@/data/projects";
+
+export function ServiceDetail({ service, projects }: { service: ServicePageData; projects: RealProject[] }) {
+  const root = useRef<HTMLElement>(null);
+  useEffect(() => { gsap.registerPlugin(ScrollTrigger); if (!root.current || matchMedia("(prefers-reduced-motion: reduce)").matches) return; const ctx=gsap.context(()=>{gsap.from("[data-service-hero]>*",{y:80,opacity:0,stagger:.12,duration:1.15,ease:"power4.out"});gsap.utils.toArray<HTMLElement>("[data-service-reveal]").forEach((el)=>gsap.fromTo(el,{y:90,opacity:0,rotateX:8},{y:0,opacity:1,rotateX:0,duration:1.1,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 86%",once:true}}));gsap.to("[data-service-orbit]",{rotate:180,ease:"none",scrollTrigger:{trigger:root.current,start:"top top",end:"bottom bottom",scrub:1}})},root);return()=>ctx.revert()},[]);
+  return <main ref={root} className="service-page"><nav className="service-nav"><Link href="/">SERVANA<span>®</span></Link><Link href="/#practice">All services</Link><Link href="/#contact">Start a project ↗</Link></nav><section className="service-hero" data-service-hero><p>{service.eyebrow}</p><h1>{service.title}</h1><div className="service-hero-bottom"><p>{service.summary}</p><div data-service-orbit className="service-orbit"><span>↓</span></div></div></section><section className="service-promise"><p data-service-reveal>{service.promise}</p></section><section className="service-details"><div data-service-reveal><p>What we deliver</p><h2>Everything needed to move from an idea to a working experience.</h2></div><ol>{service.deliverables.map((item,index)=><li data-service-reveal key={item}><span>0{index+1}</span>{item}</li>)}</ol></section><section className="service-process"><p>Our approach</p>{service.process.map((step,index)=><article data-service-reveal key={step.title}><span>0{index+1}</span><h2>{step.title}</h2><p>{step.copy}</p></article>)}</section><section className="service-work"><div data-service-reveal><p>Related work</p><h2>Built in the real world.</h2></div><div>{projects.map((project)=><a data-service-reveal href={project.liveUrl} target="_blank" rel="noreferrer" key={project.id}><div><Image src={project.image} alt={project.title} fill sizes="(max-width: 768px) 100vw, 45vw"/></div><h3>{project.title}</h3><p>{project.tagline}</p></a>)}</div></section><section className="service-end"><p>Ready to make it useful?</p><h2>Let’s talk.</h2><a href="https://wa.me/919156332109" target="_blank" rel="noreferrer">WhatsApp Pranav <i>↗</i></a></section></main>;
+}
