@@ -142,7 +142,7 @@ export function ServicesSection() {
                 {/* Bottom CTA for this discipline */}
                 <div className="mt-8 border-t border-white/10 pt-4 flex items-center justify-between">
                   <span className="font-mono text-[11px] text-zinc-500">ENGAGEMENT READY</span>
-                  <Button href="#contact" variant="ghost" size="sm" className="gap-1.5">
+                  <Button href="/contact" variant="ghost" size="sm" className="gap-1.5">
                     <span>Inquire for {activeService.number}</span>
                     <ArrowRight className="h-3.5 w-3.5 text-cyan-400" />
                   </Button>

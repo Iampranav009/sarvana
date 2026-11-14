@@ -144,8 +144,8 @@ export function Hero() {
             <span>Explore real work</span>
             <ChevronRight className="ml-2 h-3.5 w-3.5 text-cyan-300" aria-hidden="true" />
           </Button>
-          <Button href="#contact" variant="secondary" size="lg">
-            Start a project
+          <Button href="/contact" variant="secondary" size="lg">
+            Let’s discuss your project
           </Button>
         </div>
       </div>

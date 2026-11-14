@@ -80,8 +80,8 @@ export function SiteHeader() {
         {/* Actions & Mobile Toggle */}
         <div className="flex items-center gap-3">
           <div className="hidden sm:inline-flex">
-            <Button href="#contact" variant="primary" size="sm">
-              Start a project
+            <Button href="/contact" variant="primary" size="sm">
+              Let’s discuss your project
             </Button>
           </div>
 
@@ -131,13 +131,13 @@ export function SiteHeader() {
 
           <div className="flex flex-col gap-4 pb-8">
             <Button
-              href="#contact"
+              href="/contact"
               variant="primary"
               size="lg"
               className="w-full text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Start a project
+              Let’s discuss your project
             </Button>
             <p className="font-mono text-[10px] uppercase tracking-widest text-zinc-500 text-center">
               SERVANA — DIRECTION: PRANAV SHINDE

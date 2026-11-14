@@ -80,7 +80,7 @@ export function ContactSection() {
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="https://wa.me/919156332109"
+                    href="https://wa.me/919156332109?text=Hello%20Pranav%2C%20I%20found%20Servana%20through%20your%20website.%20I%20would%20like%20to%20discuss%20a%20project."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-emerald-950/40 border border-emerald-500/40 hover:border-emerald-400 text-emerald-300 hover:text-white px-4 py-3 font-mono text-xs uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-emerald-400"
@@ -169,7 +169,7 @@ export function ContactSection() {
                     <span className="text-cyan-400 font-semibold">[DIRECT CONNECT]</span> For immediate
                     conversation, message Pranav directly on WhatsApp at{" "}
                     <a
-                      href="https://wa.me/919156332109"
+                      href="https://wa.me/919156332109?text=Hello%20Pranav%2C%20I%20found%20Servana%20through%20your%20website.%20I%20would%20like%20to%20discuss%20a%20project."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-400 underline underline-offset-2"
@@ -365,7 +365,7 @@ export function ContactSection() {
             <a href="#studio" className="hover:text-white transition-colors">Studio</a>
             <a href="#services" className="hover:text-white transition-colors">Services</a>
             <a href="#founder" className="hover:text-white transition-colors">Founder</a>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <a href="/contact" className="hover:text-white transition-colors">Contact</a>
           </div>
 
           <div className="text-[11px] text-zinc-600">

@@ -94,7 +94,7 @@ export function FounderSection() {
                   <InstagramIcon className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://wa.me/919156332109"
+                  href="https://wa.me/919156332109?text=Hello%20Pranav%2C%20I%20found%20Servana%20through%20your%20website.%20I%20would%20like%20to%20discuss%20a%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Message Pranav Shinde on WhatsApp (opens in new tab)"
@@ -187,7 +187,7 @@ export function FounderSection() {
             {/* Founder Actions Cluster */}
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button
-                href="https://wa.me/919156332109"
+                href="https://wa.me/919156332109?text=Hello%20Pranav%2C%20I%20found%20Servana%20through%20your%20website.%20I%20would%20like%20to%20discuss%20a%20project."
                 external
                 variant="primary"
                 size="md"

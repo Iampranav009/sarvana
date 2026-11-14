@@ -1,11 +1,9 @@
 "use client";
 
 import { ArrowUpRight, Check } from "lucide-react";
+import { whatsappLink, site } from "@/config/site";
 import { motion } from "motion/react";
 
-const inquiryMessage = encodeURIComponent(
-  "Hey Pranav, I want to know more about Servana's services and find the right engagement for my project."
-);
 
 const pathways = [
   {
@@ -75,7 +73,7 @@ export function ServicePathways() {
               <span>{pathway.number}</span>
               {pathway.featured && <strong>Most versatile</strong>}
             </div>
-            <h3>{pathway.name}</h3>
+            <h3>{pathway.name}</h3>{site.pricing.showPrices && [site.pricing.foundation,site.pricing.growth,site.pricing.partnership][index] !== null && <p>Starting from ₹{[site.pricing.foundation,site.pricing.growth,site.pricing.partnership][index]?.toLocaleString("en-IN")}</p>}
             <p className="service-pathway-summary">{pathway.summary}</p>
             <p className="service-pathway-outcome"><span>Outcome</span>{pathway.outcome}</p>
             <ul>
@@ -84,7 +82,7 @@ export function ServicePathways() {
               ))}
             </ul>
             <a
-              href={`https://wa.me/919156332109?text=${inquiryMessage}`}
+              href={whatsappLink(pathway.name)}
               target="_blank"
               rel="noreferrer"
               aria-label={`Ask about the ${pathway.name} on WhatsApp`}
@@ -95,10 +93,11 @@ export function ServicePathways() {
         ))}
       </div>
 
+      <p>Monthly care plans cover agreed updates, hosting support and maintenance. Ask us to scope your plan.</p>
       <div className="service-pathways-note" data-reveal>
         <p>Not sure where you fit? Tell us what you are trying to make—we’ll recommend the clearest starting point.</p>
         <a
-          href={`https://wa.me/919156332109?text=${inquiryMessage}`}
+          href={whatsappLink("choosing a service pathway")}
           target="_blank"
           rel="noreferrer"
         >
