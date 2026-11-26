@@ -89,3 +89,9 @@
 @media(prefers-reduced-motion:reduce){.domain-project:hover,.domain-project:hover img{transform:none}}
 
 @media(prefers-reduced-motion:no-preference){.domain-hero-copy{animation:domain-intro .65s ease-out both}.domain-hero-visual{animation:domain-media .85s ease-out both}@keyframes domain-intro{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}@keyframes domain-media{from{opacity:0;translate:0 24px}to{opacity:1;translate:0 0}}}
+
+/* Consistent framing for the seven original service hero concepts. */
+.domain-hero-visual.is-concept{transform:none}
+.domain-hero-visual.is-concept .domain-hero-image{aspect-ratio:3/2;border:1px solid rgba(241,240,234,.12);border-radius:20px}
+.domain-hero-visual.is-concept .domain-hero-image img{object-fit:contain;object-position:center}
+@media(max-width:700px){.domain-hero-visual.is-concept .domain-hero-image{border-radius:16px}}

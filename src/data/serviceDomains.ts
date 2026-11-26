@@ -9,12 +9,11 @@ export type ServiceDomain = {
   workTitle?: string;
   note?: string;
 };
-const projectImage = (name: string) => `/services/projects/${name}.webp`;
 export const SERVICE_DOMAINS: ServiceDomain[] = [
   {
     slug: 'website-development', headline: 'A website built around your business.',
     overview: 'Your website should explain what you do and make the next step easy. We plan the pages, design the experience and develop a responsive site around your customers, content and goals. From a focused launch page to a complete business website, the scope starts with what you need.',
-    hero: { src: projectImage('savitri-reliable'), alt: 'Savitri Reliable business website designed and developed by Sarvana', caption: 'Selected work · Savitri Reliable business website' },
+    hero: { src: '/services/website-development-concept.webp', alt: 'Laptop and phone website mockups in a cream, graphite and cyan studio composition', caption: 'AI-generated concept · Responsive website development', concept: true },
     types: [
       { title: 'Business & service websites', description: 'Company profiles, service pages, team information and enquiry journeys for local and growing businesses.' },
       { title: 'E-commerce experiences', description: 'Product catalogues, storefronts and order journeys, with payments and operations scoped around your business.' },
@@ -33,7 +32,7 @@ export const SERVICE_DOMAINS: ServiceDomain[] = [
   {
     slug: 'app-crm-development', headline: 'Bring your daily work into one place.',
     overview: 'We design web applications and CRM tools around the way your team works. Start with the people, records and repeated tasks that need a clearer system, then build the modules and access rules that support them. Mobile-friendly workflows are part of the planning from the start.',
-    hero: { src: projectImage('bjp-yavatmal-crm'), alt: 'Internal organization CRM interface from Sarvana’s project portfolio', caption: 'Selected work · Internal organization CRM' },
+    hero: { src: '/services/app-crm-concept.webp', alt: 'Tablet dashboard, phone contact cards and workflow tiles in a cream and cyan studio composition', caption: 'AI-generated concept · Apps, CRM and connected workflows', concept: true },
     types: [
       { title: 'Customer & lead CRM', description: 'Contact records, enquiry stages, assignments and follow-up reminders.' },
       { title: 'Membership & attendance apps', description: 'Member profiles, attendance workflows and renewal tracking for agreed use cases.' },
@@ -90,7 +89,7 @@ export const SERVICE_DOMAINS: ServiceDomain[] = [
   {
     slug: 'social-media-ads', headline: 'A clearer presence, week after week.',
     overview: 'We connect content planning, visual design and publishing around your business. Whether you need a campaign or ongoing support, we agree what you want to communicate, which channels matter and how the work will be reviewed.',
-    hero: { src: '/services/creative-studio-concept.webp', alt: 'Original AI-generated campaign concept with printed graphics and a tablet', caption: 'AI-generated concept · Campaign and content direction', concept: true },
+    hero: { src: '/services/social-media-concept.webp', alt: 'Phone content feed with campaign print cards and social symbols in a cream and cyan studio composition', caption: 'AI-generated concept · Social media and campaign content', concept: true },
     types: [
       { title: 'Instagram management', description: 'Content themes, a publishing calendar and an agreed approval process.' },
       { title: 'Posts & carousels', description: 'Clear messages and consistent visuals adapted to each format.' },
@@ -109,7 +108,7 @@ export const SERVICE_DOMAINS: ServiceDomain[] = [
   {
     slug: 'event-systems', headline: 'Connect every part of your event.',
     overview: 'We build the digital journey around an event and help local audiences discover your business. From a clear event website to registration information and useful attendee tools, every part starts with a practical audience need.',
-    hero: { src: projectImage('rangtari'), alt: 'Rangtari event website with programme and ticketing information', caption: 'Selected work · Rangtari event website' },
+    hero: { src: '/services/event-systems-concept.webp', alt: 'Event tablet, access badge, tickets and cyan gateway in a cream studio composition', caption: 'AI-generated concept · Connected event experiences', concept: true },
     types: [
       { title: 'Event websites', description: 'Bring your story, venue, dates and ticket information into one destination.' },
       { title: 'Registration & ticketing journeys', description: 'Connect registrations and approved ticketing providers to the attendee journey.' },
@@ -128,7 +127,7 @@ export const SERVICE_DOMAINS: ServiceDomain[] = [
   {
     slug: 'search-presence', headline: 'Be easier to find. Stay ready to use.',
     overview: 'We help your website stay clear, current and discoverable. Start with accurate business details and useful service content, then scope the technical setup, domain support and ongoing care your site needs.',
-    hero: { src: projectImage('piles-clinic-yavatmal'), alt: 'Piles Clinic Yavatmal website with treatment and local contact information', caption: 'Selected work · Healthcare website and local search foundations' },
+    hero: { src: '/services/search-care-concept.webp', alt: 'Search interface, location pin and website care symbols in a cream and cyan studio composition', caption: 'AI-generated concept · Search presence and website care', concept: true },
     types: [
       { title: 'Local SEO foundations', description: 'Service structure, location information, metadata and useful page content.' },
       { title: 'Google Business Profile', description: 'Profile setup and information updates with the required business access.' },

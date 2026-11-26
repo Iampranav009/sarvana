@@ -1,7 +1,49 @@
 {
   "generatedConcepts": [
-    {"file":"creative-studio-concept.webp","source":"OpenAI image generation","purpose":"Original creative and social service concept; not client work"},
-    {"file":"ai-workflow-concept.webp","source":"OpenAI image generation","purpose":"Original AI service concept; not a delivered client system"}
+    {
+      "file": "creative-studio-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original creative-direction hero concept; not client work"
+    },
+    {
+      "file": "ai-workflow-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original AI service concept; not a delivered client system"
+    },
+    {
+      "file": "website-development-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original website-development hero concept; not completed client work",
+      "conversion": "WebP quality 88, 1536 x 1024, no upscaling"
+    },
+    {
+      "file": "app-crm-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original app-crm-development hero concept; not completed client work",
+      "conversion": "WebP quality 88, 1536 x 1024, no upscaling"
+    },
+    {
+      "file": "social-media-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original social-media-ads hero concept; not completed client work",
+      "conversion": "WebP quality 88, 1536 x 1024, no upscaling"
+    },
+    {
+      "file": "event-systems-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original event-systems hero concept; not completed client work",
+      "conversion": "WebP quality 88, 1536 x 1024, no upscaling"
+    },
+    {
+      "file": "search-care-concept.webp",
+      "source": "OpenAI image generation",
+      "purpose": "Original search-presence hero concept; not completed client work",
+      "conversion": "WebP quality 88, 1536 x 1024, no upscaling"
+    }
   ],
-  "projectPreviews": {"source":"Existing public/projects/*.png portfolio screenshots", "output":"projects/*.webp", "conversion":"WebP quality 86, maximum width 1600px; no upscaling"}
+  "projectPreviews": {
+    "source": "Existing public/projects/*.png portfolio screenshots",
+    "output": "projects/*.webp",
+    "conversion": "WebP quality 86, maximum width 1600px; no upscaling"
+  }
 }
