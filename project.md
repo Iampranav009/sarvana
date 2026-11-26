@@ -82,3 +82,6 @@ Each of the seven service domains now has its own generated hero concept in the 
 
 ## Navigation and NFC hero
 The homepage navigation is transparent over the hero and becomes solid after 32px of scrolling. Other routes and the open mobile menu remain solid. The NFC frame reserves an ink header area to avoid a paper strip above dark heroes. Its collection hero uses original generated concept artwork (`public/nfc/nfc-hero-concept.webp`); category libraries retain actual reference images.
+
+## Current social media clients
+`src/data/socialClients.ts` records five user-confirmed current content/social management clients. `SocialClients` renders their supplied local WebP logos and direct Instagram links on `/services/social-media-ads` and `/work/social-media`. Keep this list separate from creative/community portfolio entries, whose imagery relies on a different data model. Logos are preserved at source resolution; provenance is in `public/logos/social-client-sources.json`. Instagram bios could not be fetched during implementation; descriptions are conservative and do not assert locations or offerings beyond supplied names and branding.
