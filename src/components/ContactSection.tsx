@@ -1,5 +1,6 @@
 "use client";
 
+import { Wordmark } from '@/components/Wordmark';
 import React, { useState } from "react";
 import {
   Send,
@@ -144,7 +145,7 @@ export function ContactSection() {
             </div>
 
             <div className="mt-10 hidden lg:block font-mono text-[10px] text-zinc-600 uppercase tracking-widest">
-              SERVANA STUDIO // YAVATMAL
+              SARVANA STUDIO // YAVATMAL
             </div>
           </div>
 
@@ -349,7 +350,7 @@ export function ContactSection() {
         <div className="mt-20 border-t border-white/[0.08] pt-8 flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs text-zinc-500">
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="font-sans font-bold text-white tracking-tight text-sm">
-              SERVANA
+              <Wordmark/>
             </span>
             <span>{"//"}</span>
             <span>CREATIVE STUDIO</span>
@@ -369,7 +370,7 @@ export function ContactSection() {
           </div>
 
           <div className="text-[11px] text-zinc-600">
-            © 2026 SERVANA. ALL RIGHTS RESERVED.
+            © 2026 SARVANA. ALL RIGHTS RESERVED.
           </div>
         </div>
       </div>

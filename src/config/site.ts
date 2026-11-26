@@ -17,10 +17,10 @@ export const industries: Offering[] = [
   { slug: 'ecommerce-crm', title: 'E-commerce plus CRM', outcome: 'Connect your store and customer relationships.', features: ['Online store', 'Customer records', 'Operations'] },
   { slug: 'coaching-institute-software', title: 'Coaching institutes', outcome: 'Keep admissions and fees in one place.', features: ['Student and parent CRM', 'Fees and WhatsApp reminders', 'AI admission chatbot'] },
 ];
-export const whatsappLink = (context = 'a project') => `https://wa.me/919156332109?text=${encodeURIComponent(`Hello Pranav, I found Servana through your website. I would like to discuss ${context}.`)}`;
+export const whatsappLink = (context = 'a project') => `https://wa.me/919156332109?text=${encodeURIComponent(`Hello Pranav, I found Sarvana through your website. I would like to discuss ${context}.`)}`;
 export const site = {
-  name: 'Servana', founder: 'Pranav Shinde', tagline: 'We build websites, apps and AI-powered content that bring you customers.',
-  description: 'Servana builds websites, apps, CRM software and AI content in Yavatmal. Get branding, social media and local SEO support for your growing business across India.',
+  name: 'Sarvana', founder: 'Pranav Shinde', tagline: 'We build websites, apps and AI-powered content that bring you customers.',
+  description: 'Sarvana builds websites, apps, CRM software and AI content in Yavatmal. Get branding, social media and local SEO support for your growing business across India.',
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://sarvana-nine.vercel.app').replace(/\/$/, ''),
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'pranavshindeji5001@gmail.com', phone: '+91 9156332109', whatsapp: whatsappLink(), booking: 'https://calendly.com/pranavshindeji5001/new-meeting',
   socials: { instagram: 'https://www.instagram.com/iampranav_009/', linkedin: 'https://www.linkedin.com/in/iampranav009/' },

@@ -1,0 +1,242 @@
+[
+  {
+    "category": "whatsapp",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "whatsapp/green-and-white-chat-cards",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "category": "google-review",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "google-review/black-google-review-cards",
+    "width": 720,
+    "height": 720
+  },
+  {
+    "category": "instagram",
+    "format": "stands",
+    "alsoIn": [],
+    "imageId": "instagram/gradient-instagram-counter-display",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "category": "keychains",
+    "format": "google-review",
+    "alsoIn": [
+      "google-review"
+    ],
+    "imageId": "keychains/purple-google-review-keyring",
+    "width": 1120,
+    "height": 1400
+  },
+  {
+    "category": "google-review",
+    "format": "plates",
+    "alsoIn": [],
+    "imageId": "google-review/blue-google-review-acrylic-plate",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "category": "keychains",
+    "format": "google-review",
+    "alsoIn": [
+      "google-review"
+    ],
+    "imageId": "keychains/white-google-review-key-fobs",
+    "width": 800,
+    "height": 800
+  },
+  {
+    "category": "google-review",
+    "format": "stickers",
+    "alsoIn": [],
+    "imageId": "google-review/blue-review-adhesive-plate",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "keychains",
+    "format": "google-review",
+    "alsoIn": [
+      "google-review"
+    ],
+    "imageId": "keychains/round-google-review-nfc-keychain",
+    "width": 330,
+    "height": 350
+  },
+  {
+    "category": "google-review",
+    "format": "plates",
+    "alsoIn": [],
+    "imageId": "google-review/black-custom-logo-review-plate",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "google-review",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "google-review/black-google-review-qr-cards",
+    "width": 554,
+    "height": 554
+  },
+  {
+    "category": "keychains",
+    "format": "instagram",
+    "alsoIn": [
+      "instagram"
+    ],
+    "imageId": "keychains/black-instagram-keyring",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "keychains",
+    "format": "instagram",
+    "alsoIn": [
+      "instagram"
+    ],
+    "imageId": "keychains/multicolour-instagram-keyrings",
+    "width": 335,
+    "height": 597
+  },
+  {
+    "category": "keychains",
+    "format": "instagram",
+    "alsoIn": [
+      "instagram"
+    ],
+    "imageId": "keychains/instagram-keyring-colour-options",
+    "width": 576,
+    "height": 462
+  },
+  {
+    "category": "google-review",
+    "format": "plates",
+    "alsoIn": [],
+    "imageId": "google-review/google-logo-review-display",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "google-review",
+    "format": "stands",
+    "alsoIn": [],
+    "imageId": "google-review/restaurant-bill-holder-review-card",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "google-review",
+    "format": "sets",
+    "alsoIn": [],
+    "imageId": "google-review/custom-printed-review-card-set",
+    "width": 554,
+    "height": 554
+  },
+  {
+    "category": "google-review",
+    "format": "stands",
+    "alsoIn": [],
+    "imageId": "google-review/black-google-review-counter-stand",
+    "width": 554,
+    "height": 554
+  },
+  {
+    "category": "google-review",
+    "format": "stands",
+    "alsoIn": [],
+    "imageId": "google-review/restaurant-google-review-table-stands",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "category": "google-review",
+    "format": "plates",
+    "alsoIn": [],
+    "imageId": "google-review/blue-google-review-table-display",
+    "width": 554,
+    "height": 554
+  },
+  {
+    "category": "facebook",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "facebook/blue-facebook-review-qr-cards",
+    "width": 554,
+    "height": 554
+  },
+  {
+    "category": "keychains",
+    "format": "google-review",
+    "alsoIn": [
+      "google-review"
+    ],
+    "imageId": "keychains/white-google-logo-keyrings",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "keychains",
+    "format": "google-review",
+    "alsoIn": [
+      "google-review"
+    ],
+    "imageId": "keychains/black-google-review-qr-keyring",
+    "width": 224,
+    "height": 224
+  },
+  {
+    "category": "google-review",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "google-review/white-google-review-card-pair",
+    "width": 447,
+    "height": 447
+  },
+  {
+    "category": "instagram",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "instagram/orange-instagram-follow-cards",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "category": "google-review",
+    "format": "plates",
+    "alsoIn": [],
+    "imageId": "google-review/black-google-review-phone-preview",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "category": "whatsapp",
+    "format": "stands",
+    "alsoIn": [],
+    "imageId": "whatsapp/green-whatsapp-counter-stand",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "category": "google-review",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "google-review/blue-google-review-card-pair",
+    "width": 1080,
+    "height": 1080
+  },
+  {
+    "category": "whatsapp",
+    "format": "cards",
+    "alsoIn": [],
+    "imageId": "whatsapp/green-whatsapp-nfc-qr-cards",
+    "width": 1080,
+    "height": 1080
+  }
+]

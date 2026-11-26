@@ -36,7 +36,7 @@ const pathways = [
   {
     number: "03",
     name: "Signature Partnership",
-    summary: "For ambitious teams that need Servana as an embedded creative and digital partner.",
+    summary: "For ambitious teams that need Sarvana as an embedded creative and digital partner.",
     outcome: "Turn every digital touchpoint into one recognizable experience.",
     services: [
       "End-to-end creative and digital direction",
@@ -48,23 +48,41 @@ const pathways = [
   },
 ];
 
-export function ServicePathways() {
+export function ServicePathways({ context, focusItems }: { context?: string; focusItems?: string[] } = {}) {
+  const options = context && focusItems ? pathways.map((pathway, index) => ({
+    ...pathway,
+    summary: [
+      `For one focused ${context.toLowerCase()} need, with a clear brief and agreed first delivery.`,
+      `For a broader ${context.toLowerCase()} scope with several connected deliverables.`,
+      `For ongoing ${context.toLowerCase()} support, planned together around your priorities.`,
+    ][index],
+    outcome: [
+      'Start with one useful, well-defined piece of work.',
+      'Connect the parts that need to work together.',
+      'Keep improving with a clear review and delivery rhythm.',
+    ][index],
+    services: index === 0
+      ? ['Discovery and a written scope', `A focused brief for ${focusItems[0].toLowerCase()}`, 'Brand and workflow requirements', 'Agreed review and revision stages', 'Final delivery and handover']
+      : index === 1
+        ? [...focusItems.slice(0, 3), 'A coordinated delivery plan', 'Review, handover and scoped support']
+        : ['Ongoing planning and prioritisation', ...focusItems.slice(0, 2), 'An agreed delivery and review cadence', 'Maintenance or creative iteration as scoped'],
+  })) : pathways;
   return (
     <section className="service-pathways" aria-labelledby="service-pathways-title">
       <div className="service-pathways-heading" data-reveal>
         <p>Ways to work together</p>
         <h2 id="service-pathways-title">Choose the right<br />level of momentum.</h2>
         <p>
-          No fixed packages or hidden price tables. Start with the pathway that reflects where your idea is today, then we shape the exact scope together.
+          {context ? `Choose a starting point for ${context.toLowerCase()}. We agree the deliverables, timeline and support together.` : "Start with the pathway that reflects where your idea is today, then we shape the exact scope together."}
         </p>
       </div>
 
       <div className="service-pathways-grid">
-        {pathways.map((pathway, index) => (
+        {options.map((pathway, index) => (
           <motion.article
             key={pathway.name}
             className={pathway.featured ? "service-pathway is-featured" : "service-pathway"}
-            initial={{ opacity: 0, y: 56 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.18 }}
             transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
@@ -82,7 +100,7 @@ export function ServicePathways() {
               ))}
             </ul>
             <a
-              href={whatsappLink(pathway.name)}
+              href={whatsappLink(context ? `${pathway.name} for ${context}` : pathway.name)}
               target="_blank"
               rel="noreferrer"
               aria-label={`Ask about the ${pathway.name} on WhatsApp`}
@@ -93,7 +111,7 @@ export function ServicePathways() {
         ))}
       </div>
 
-      <p>Monthly care plans cover agreed updates, hosting support and maintenance. Ask us to scope your plan.</p>
+      <p>{context ? "One-off delivery and ongoing support are both available. We confirm the scope, fees and provider costs in your proposal." : "Monthly care plans cover agreed updates, hosting support and maintenance. Ask us to scope your plan."}</p>
       <div className="service-pathways-note" data-reveal>
         <p>Not sure where you fit? Tell us what you are trying to make—we’ll recommend the clearest starting point.</p>
         <a

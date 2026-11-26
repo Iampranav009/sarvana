@@ -94,7 +94,7 @@ export function StudioManifesto() {
               {"// COMPUTATIONAL CRAFT"}
             </h3>
             <p className="text-base sm:text-lg text-zinc-300 font-light leading-relaxed">
-              SERVANA operates as an interdisciplinary creative atelier. We discard template conventions
+              SARVANA operates as an interdisciplinary creative atelier. We discard template conventions
               and generic frameworks in favor of purpose-built architectures, custom shader physics, and
               uncompromising typographic hierarchy.
             </p>
@@ -114,7 +114,7 @@ export function StudioManifesto() {
 
         {/* Studio Registration Tag */}
         <div className="mt-14 flex items-center justify-between border-t border-white/[0.06] pt-6 font-mono text-[11px] text-zinc-600 uppercase tracking-widest">
-          <span>SERVANA STUDIO // ATELIER NOTES</span>
+          <span>SARVANA STUDIO // ATELIER NOTES</span>
           <span>EST. 2026</span>
         </div>
       </div>

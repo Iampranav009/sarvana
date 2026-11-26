@@ -109,7 +109,7 @@ export function ServicesSection() {
                     <span className="font-mono text-xs uppercase tracking-[0.25em] text-cyan-400">
                       SCOPE SPECIFICATION // {activeService.number}
                     </span>
-                    <span className="font-mono text-[10px] text-zinc-500">SERVANA</span>
+                    <span className="font-mono text-[10px] text-zinc-500">SARVANA</span>
                   </div>
 
                   <h4 className="mt-6 font-sans text-2xl font-bold uppercase tracking-tight text-white">

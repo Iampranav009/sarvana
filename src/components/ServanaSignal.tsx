@@ -36,9 +36,9 @@ export function ServanaSignal() {
     return () => ctx.revert();
   }, []);
 
-  return <section ref={sectionRef} className="signal-chapter" aria-label="How Servana transforms an idea">
+  return <section ref={sectionRef} className="signal-chapter" aria-label="How Sarvana transforms an idea">
     <div className="signal-copy">
-      <p>THE SERVANA SIGNAL</p>
+      <p>THE SARVANA SIGNAL</p>
       <h2>An idea becomes<br/>useful in motion.</h2>
       <div className="signal-stage-copy" aria-live="polite"><span>0{active + 1}</span><h3>{stages[active][0]}</h3><p>{stages[active][1]}</p></div>
     </div>

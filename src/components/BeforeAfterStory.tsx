@@ -24,10 +24,10 @@ export function BeforeAfterStory() {
     return () => ctx.revert();
   }, []);
   return <section id="transformation-story" ref={sectionRef} className="transformation-story">
-    <div className="transformation-copy"><p>RANGTARI · BEFORE / AFTER</p><h2>From an event<br/>to an ecosystem.</h2><p>Rangtari began with disconnected event information and offline pass discovery. Servana shaped one coherent digital presence—story, schedule, guidance and Meetio ticket access—built around the attendee journey.</p><a href="https://rangtari.nexuseventplaner.in/" target="_blank" rel="noreferrer">View the live experience <i>↗</i></a></div>
+    <div className="transformation-copy"><p>RANGTARI · BEFORE / AFTER</p><h2>From an event<br/>to an ecosystem.</h2><p>Rangtari began with disconnected event information and offline pass discovery. Sarvana shaped one coherent digital presence—story, schedule, guidance and Meetio ticket access—built around the attendee journey.</p><a href="https://rangtari.nexuseventplaner.in/" target="_blank" rel="noreferrer">View the live experience <i>↗</i></a></div>
     <div ref={frameRef} className="transformation-frame">
       <div ref={beforeRef} className="before-layer"><Image src="/projects/rangtari.png" alt="" fill sizes="(max-width: 768px) 100vw, 54vw" className="before-preview"/><div className="before-frost"/><span>BEFORE · FRAGMENTED</span><div className="fragment fragment-a">DATES?</div><div className="fragment fragment-b">VENUE</div><div className="fragment fragment-c">PASSES</div><p>Scattered information.<br/>No connected journey.</p></div>
-      <div ref={revealRef} className="after-layer"><Image src="/projects/rangtari.png" alt="Rangtari completed digital experience" fill sizes="(max-width: 768px) 100vw, 54vw"/><span>AFTER · SERVANA SYSTEM</span></div>
+      <div ref={revealRef} className="after-layer"><Image src="/projects/rangtari.png" alt="Rangtari completed digital experience" fill sizes="(max-width: 768px) 100vw, 54vw"/><span>AFTER · SARVANA SYSTEM</span></div>
       <div ref={handleRef} className="reveal-handle" aria-hidden="true"><i>SCROLL</i><b>↓</b></div>
     </div>
   </section>;

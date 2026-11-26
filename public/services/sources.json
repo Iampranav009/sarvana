@@ -1,0 +1,7 @@
+{
+  "generatedConcepts": [
+    {"file":"creative-studio-concept.webp","source":"OpenAI image generation","purpose":"Original creative and social service concept; not client work"},
+    {"file":"ai-workflow-concept.webp","source":"OpenAI image generation","purpose":"Original AI service concept; not a delivered client system"}
+  ],
+  "projectPreviews": {"source":"Existing public/projects/*.png portfolio screenshots", "output":"projects/*.webp", "conversion":"WebP quality 86, maximum width 1600px; no upscaling"}
+}

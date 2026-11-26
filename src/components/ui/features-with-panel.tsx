@@ -34,7 +34,7 @@ export default function FeaturesWithPanel() {
       <div className="creative-feature-list">
         <p>HOW THE CREATIVE WORK OPERATES</p>
         <h2 id="creative-disciplines-title">Four disciplines.<br/>One visual voice.</h2>
-        <ul>{items.map((item, index) => <motion.li key={item.title} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .55, delay: index * .08, ease: [.32,.72,0,1] }} className={cn("creative-feature-item", active === index && "is-active")}>
+        <ul>{items.map((item, index) => <motion.li key={item.title} initial={false} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: .55, delay: index * .08, ease: [.32,.72,0,1] }} className={cn("creative-feature-item", active === index && "is-active")}>
           <button type="button" onClick={() => setActive(index)} aria-expanded={active === index} aria-controls={`creative-panel-${index}`}>
             <span>0{index + 1}</span><span><strong>{item.title}</strong><small>{item.description}</small></span><i aria-hidden="true">↗</i>
           </button>

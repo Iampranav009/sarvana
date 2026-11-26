@@ -102,7 +102,7 @@ export function Hero() {
               aria-hidden="true"
             />
             <p className="font-mono text-[11px] sm:text-xs uppercase tracking-[0.22em] text-zinc-300">
-              SERVANA — CREATIVE STUDIO
+              SARVANA — CREATIVE STUDIO
             </p>
           </div>
           <div className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-zinc-500">

@@ -1,0 +1,129 @@
+/* Shared navigation and page rhythm, using the studio's existing design tokens. */
+.floating-nav{gap:clamp(20px,3vw,44px)}
+.floating-nav .brand-mark{min-height:44px}
+.floating-nav .desktop-nav a{display:inline-flex;align-items:center;min-height:44px}
+.mobile-menu{overflow-y:auto;padding-top:110px;padding-bottom:96px}
+.mobile-menu nav{width:100%;max-width:640px;margin:0 auto}
+.mobile-menu a{font-size:clamp(28px,7.5vw,48px)}
+.mobile-menu a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.nfc-shell{padding-top:110px}
+body>.business-section{padding-top:150px;width:100%}
+body>.contact-page{padding-top:150px}
+.studio-footer{flex-shrink:0}
+.studio-section-heading{display:grid;grid-template-columns:1.2fr 1fr;align-items:end;gap:40px;margin-bottom:40px}
+.studio-section-heading .kicker{margin:0 0 18px}
+.studio-section-heading h2{font-size:clamp(36px,5vw,68px);font-weight:700;line-height:1.04;letter-spacing:-.055em;margin:0;text-wrap:balance}
+.studio-section-heading>p{max-width:360px;justify-self:end;font-size:16px;line-height:1.7;color:var(--muted);margin:0}
+.studio-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.studio-service-card{display:flex;flex-direction:column;min-width:0;padding:28px;border:1px solid var(--line);border-radius:20px;background:rgba(241,240,234,.025);transition:transform .3s,border-color .3s,background .3s}
+.studio-service-card:hover{transform:translateY(-4px);border-color:var(--accent);background:rgba(32,217,210,.04)}
+.service-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}
+.service-card-icon{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--line);border-radius:13px;color:var(--accent)}
+.service-card-icon svg{width:23px;height:23px}
+.service-card-top>svg{width:20px;height:20px;color:var(--muted)}
+.studio-service-card h3,.website-service-card h3{font-size:23px;line-height:1.2;letter-spacing:-.035em;font-weight:650;margin:0 0 12px}
+.studio-service-card>p{font-size:14px;line-height:1.7;color:var(--muted);margin:0 0 22px}
+.studio-service-card ul{padding:0;margin:0 0 28px;list-style:none;display:flex;flex-wrap:wrap;gap:7px}
+.studio-service-card li{font-size:11px;padding:6px 9px;border:1px solid var(--line);border-radius:999px;line-height:1.4}
+.service-card-link{display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:12px;font-weight:600;margin-top:auto;min-height:32px}
+.service-card-link svg{width:18px;height:18px;color:var(--accent)}
+.website-services{background:var(--paper);color:var(--ink);padding:clamp(64px,7vw,100px) clamp(16px,6vw,96px)}
+.website-services-inner{max-width:1248px;margin:0 auto}
+.website-services .kicker{color:#42615e}
+.website-services .studio-section-heading>p{color:#555b58}
+.website-services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.website-service-card{display:flex;flex-direction:column;min-width:0;padding:28px;border:1px solid rgba(9,11,13,.16);border-radius:18px;transition:background .3s,transform .3s}
+.website-service-card:hover{background:rgba(9,11,13,.035);transform:translateY(-4px)}
+.website-service-card>svg{width:24px;height:24px;margin-bottom:30px;color:#246461}
+.website-service-card>p{font-size:14px;line-height:1.7;color:#555b58;margin:0 0 24px}
+.website-service-detail{font-size:11px;color:#555b58;margin:auto 0 20px;line-height:1.6}
+.website-service-card .service-card-link{margin-top:0;border-top:1px solid rgba(9,11,13,.12);padding-top:16px}
+.website-service-card .service-card-link svg{color:#246461}
+.studio-faq{padding:clamp(64px,8vw,115px) clamp(16px,6vw,96px);background:var(--paper);color:var(--ink);display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(32px,7vw,100px)}
+.studio-faq .kicker{color:#42615e;margin:0 0 20px}
+.studio-faq h2{font-size:clamp(36px,4.7vw,66px);line-height:1.06;letter-spacing:-.055em;margin:0 0 24px;font-weight:700}
+.studio-faq-heading>p:last-child{font-size:14px;line-height:1.7;color:#555b58}
+.studio-faq-heading a{text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
+.studio-faq-list details{border-top:1px solid rgba(9,11,13,.16)}
+.studio-faq-list details:last-child{border-bottom:1px solid rgba(9,11,13,.16)}
+.studio-faq-list summary{display:flex;justify-content:space-between;align-items:center;gap:20px;list-style:none;cursor:pointer;padding:23px 0;font-size:17px;font-weight:550;line-height:1.4}
+.studio-faq-list summary::-webkit-details-marker{display:none}
+.studio-faq-list summary svg{flex-shrink:0;transition:transform .25s}
+.studio-faq-list details[open] summary svg{transform:rotate(45deg)}
+.studio-faq-list details>p{font-size:14px;line-height:1.8;color:#555b58;margin:0;padding:0 32px 24px 0;max-width:600px}
+.landing-page .contact-chapter.contact-refresh{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:clamp(32px,7vw,110px);padding:clamp(64px,8vw,115px) var(--landing-gutter)}
+.contact-refresh .kicker{color:var(--accent)}
+.landing-page .contact-chapter.contact-refresh h2{font-size:clamp(48px,7.5vw,104px);font-weight:700;line-height:1;letter-spacing:-.06em;margin:24px 0}
+.contact-refresh .contact-refresh-intro{font-size:16px;line-height:1.7;letter-spacing:0;text-transform:none;color:var(--muted);max-width:440px;margin:0}
+.contact-refresh-actions{display:flex;flex-direction:column;align-items:flex-start;gap:22px;border-left:1px solid var(--line);padding-left:clamp(24px,4vw,60px)}
+.studio-action{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;padding:10px 12px 10px 24px;min-height:60px;border-radius:999px;background:var(--paper);color:var(--ink);font-size:14px;font-weight:650;transition:transform .25s}
+.studio-action i{display:grid;place-items:center;flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--ink);font-style:normal;transition:transform .25s}
+.studio-action:hover i{transform:rotate(-15deg)}
+.contact-booking{display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:14px;min-height:44px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.contact-refresh-actions>p{font-size:12px;color:var(--muted);line-height:1.7;margin:8px 0 -14px}
+.contact-email{font-size:13px;overflow-wrap:anywhere;max-width:100%;min-height:44px;display:inline-flex;align-items:center}
+.landing-page .client-voices-heading h2{font-size:clamp(40px,5.5vw,76px);line-height:1.02;letter-spacing:-.055em}
+/* Portfolio headings retain presence without forcing full-screen empty chapters. */
+.portfolio-page .portfolio-hero{padding:160px 6vw 64px;min-height:0}
+.portfolio-page .portfolio-hero h1{font-size:clamp(48px,7.8vw,112px);line-height:1.02;letter-spacing:-.06em;font-weight:700;max-width:1000px;margin:24px 0 42px;text-wrap:balance}
+.portfolio-page .portfolio-hero>div p{font-size:16px;line-height:1.7;max-width:580px}
+.portfolio-page .horizon-intro{padding:64px 6vw 32px;min-height:0}
+.portfolio-page .horizon-intro h2{font-size:clamp(36px,4.6vw,64px);line-height:1.06;letter-spacing:-.05em;font-weight:650;margin:20px 0}
+.portfolio-page .creative-feature-panel{padding:48px 6vw 64px}
+.portfolio-page .creative-feature-list h2{font-size:clamp(34px,4vw,56px);line-height:1.06;letter-spacing:-.05em}
+.portfolio-page .creative-horizon{min-height:0}
+.portfolio-page .creative-wall{gap:64px 24px;padding:56px 6vw 88px;align-items:start}
+.portfolio-page .creative-sheet{grid-column:auto;margin:0;border-radius:16px;overflow:hidden}
+.portfolio-page .creative-wall{grid-template-columns:repeat(2,minmax(0,1fr))}
+.portfolio-page .creative-sheet:last-child{max-width:780px;grid-column:1/-1;width:100%;justify-self:center}
+.portfolio-page .creative-sheet h2{font-size:clamp(28px,3.2vw,46px);line-height:1.08;letter-spacing:-.045em;font-weight:650;margin:16px 0 12px}
+.portfolio-page .creative-sheet p{font-size:14px;line-height:1.7}
+.portfolio-page .creative-sheet figure{aspect-ratio:16/10}
+.portfolio-page .portfolio-end{padding:80px 6vw;min-height:0}
+.portfolio-page .portfolio-end h2{font-size:clamp(46px,7vw,96px);line-height:1.02;letter-spacing:-.055em;margin:24px 0 36px;font-weight:700}
+@media(min-width:901px){.mobile-menu{display:none}}
+@media(max-width:1000px){.studio-service-grid,.website-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.floating-nav{gap:20px}.desktop-nav{gap:18px}}
+@media(max-width:767px){
+ .floating-nav{top:14px;width:calc(100% - 28px);padding-left:18px;height:64px;gap:8px}
+ .floating-nav .nav-cta,.floating-nav .desktop-nav{display:none}.floating-nav .menu-toggle{display:block}
+ .nfc-shell{padding-top:100px}body>.contact-page,body>.business-section{padding-top:125px}
+ .studio-section-heading{grid-template-columns:1fr;gap:20px;margin-bottom:28px}.studio-section-heading>p{justify-self:start;max-width:480px;font-size:15px}
+ .studio-service-card,.website-service-card{padding:23px}.studio-service-card h3,.website-service-card h3{font-size:21px}
+ .studio-faq{grid-template-columns:1fr;gap:32px}.studio-faq-list summary{font-size:16px;padding:21px 0}
+ .landing-page .contact-chapter.contact-refresh{grid-template-columns:1fr;gap:32px}.contact-refresh-actions{border-left:0;border-top:1px solid var(--line);padding:28px 0 0;width:100%}
+ .portfolio-page .portfolio-hero{padding:130px 5% 44px}.portfolio-page .portfolio-hero h1{font-size:clamp(44px,9vw,68px);margin:22px 0 30px}
+ .portfolio-page .portfolio-hero>div{gap:20px}.portfolio-page .portfolio-hero>div p{font-size:15px}
+ .portfolio-page .horizon-intro{padding:44px 5% 20px}.portfolio-page .horizon-intro h2{font-size:36px}
+ .portfolio-page .creative-feature-panel{padding:28px 5% 40px}.portfolio-page .creative-feature-list h2{font-size:34px}
+ .portfolio-page .creative-wall{grid-template-columns:1fr;gap:28px;padding:32px 5% 56px}
+ .portfolio-page .creative-sheet:last-child{grid-column:auto}.portfolio-page .creative-sheet>div{padding:22px 16px}.portfolio-page .creative-sheet h2{font-size:30px}
+ .portfolio-page .portfolio-end{padding:64px 5%}.portfolio-page .portfolio-end h2{font-size:48px}
+}
+@media(max-width:540px){.studio-service-grid,.website-services-grid{grid-template-columns:1fr}.studio-action{font-size:13px;gap:16px;max-width:100%;padding-left:20px}}
+@media(prefers-reduced-motion:reduce){.studio-service-card:hover,.website-service-card:hover,.studio-action:hover i{transform:none}}
+
+.portfolio-page .creative-feature-list>h2{margin:20px 0 32px;font-weight:650}
+.landing-page .client-voices{padding-top:90px;padding-bottom:76px}
+.landing-page .client-voices-heading{margin-bottom:48px}
+
+/* Keep text and interactive media readable independently of the decorative horizon. */
+.portfolio-page .creative-horizon{background:var(--paper)}
+.portfolio-page .creative-horizon:after{display:none}
+.portfolio-page .horizon-glow{bottom:auto;height:540px;opacity:.18;background-color:var(--paper)}
+.portfolio-page .creative-feature-panel{background:var(--ink);color:var(--paper)}
+.portfolio-page .creative-horizon .creative-wall{background:var(--ink)}
+.portfolio-page .creative-feature-list>p,.portfolio-page .creative-feature-item.is-active i{color:var(--accent)}
+.portfolio-page .creative-feature-item strong{color:#b6bbb8;font-weight:550}
+.portfolio-page .creative-feature-item.is-active strong{color:var(--paper)}
+.portfolio-page .creative-feature-item small{color:var(--muted);font-size:13px;line-height:1.7}
+.portfolio-page .creative-feature-mobile-media>.ui-card{margin-left:0;border-radius:12px}
+.portfolio-page .creative-feature-item>button{padding:22px 0}
+
+@media(min-width:768px) and (max-width:900px){.floating-nav .desktop-nav{display:none}.floating-nav .menu-toggle{display:block}}
+
+/* The four process stages form a single desktop row. */
+.landing-page .process-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.landing-page .process-grid h3{font-size:23px;line-height:1.2}
+.landing-page .process-grid p{font-size:14px;line-height:1.75}
+@media(max-width:900px){.landing-page .process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.landing-page .process-grid{grid-template-columns:1fr}}

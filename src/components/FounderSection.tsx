@@ -125,7 +125,7 @@ export function FounderSection() {
             <div className="mt-8 space-y-4 text-base sm:text-lg text-zinc-300 font-light leading-relaxed">
               <p>
                 I am <span className="text-white font-medium">Pranav Shinde</span>, founder and creative
-                technologist at <span className="text-white font-medium">SERVANA</span>. Based in Yavatmal,
+                technologist at <span className="text-white font-medium">SARVANA</span>. Based in Yavatmal,
                 Maharashtra, I build straightforward, reliable digital systems across events, communities,
                 commerce, and internal operations.
               </p>

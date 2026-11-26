@@ -4,10 +4,10 @@ import { Pause, Play, Quote } from "lucide-react";
 import { useState } from "react";
 
 const voices = [
-  { quote: "Servana brought technology into Rangtari in a way Yavatmal had not seen before. The digital presence and ticketing support gave our first grand Garba event a stronger identity.", name: "Nexus Events", role: "Founder & co-founder", project: "Rangtari Grand Garba" },
-  { quote: "We saw the quality Servana brought to event work. Their understanding of youth culture, visual direction and digital promotion made them the right partner for FrequencyX.", name: "FrequencyX", role: "Organizing team", project: "New Year experience · 31 Dec 2026" },
-  { quote: "Servana organized our website around patient confidence, treatment information and direct enquiries, while creating a stronger search presence across Yavatmal.", name: "Piles Fistula Clinic", role: "Clinic team", project: "Healthcare website & local search" },
-  { quote: "Servana gave our services a clearer, more credible digital presence. Clients can now understand our staffing models, scale and pan-India capabilities more easily.", name: "Savitri Reliable", role: "Leadership team", project: "Business website & service positioning" },
+  { quote: "Sarvana brought technology into Rangtari in a way Yavatmal had not seen before. The digital presence and ticketing support gave our first grand Garba event a stronger identity.", name: "Nexus Events", role: "Founder & co-founder", project: "Rangtari Grand Garba" },
+  { quote: "We saw the quality Sarvana brought to event work. Their understanding of youth culture, visual direction and digital promotion made them the right partner for FrequencyX.", name: "FrequencyX", role: "Organizing team", project: "New Year experience · 31 Dec 2026" },
+  { quote: "Sarvana organized our website around patient confidence, treatment information and direct enquiries, while creating a stronger search presence across Yavatmal.", name: "Piles Fistula Clinic", role: "Clinic team", project: "Healthcare website & local search" },
+  { quote: "Sarvana gave our services a clearer, more credible digital presence. Clients can now understand our staffing models, scale and pan-India capabilities more easily.", name: "Savitri Reliable", role: "Leadership team", project: "Business website & service positioning" },
 ];
 
 function VoiceCard({ voice, duplicate = false }: { voice: (typeof voices)[number]; duplicate?: boolean }) {
@@ -20,9 +20,9 @@ export function ClientVoices() {
     <section className="client-voices" aria-labelledby="client-voices-title">
       <div className="client-voices-heading" data-reveal>
         <p>Client voices</p>
-        <h2 id="client-voices-title">The work matters<br />when it moves people.</h2>
+        <h2 id="client-voices-title">Words from<br />our clients.</h2>
         <div>
-          <p>Short reflections from organizations shaped with Servana.</p>
+          <p>Short reflections from organizations shaped with Sarvana.</p>
           <button className="client-voices-toggle" type="button" onClick={() => setPaused((value) => !value)} aria-label={paused ? "Play testimonials" : "Pause testimonials"}>
             {paused ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}{paused ? "Play" : "Pause"}
           </button>

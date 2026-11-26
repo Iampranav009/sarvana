@@ -1,3 +1,4 @@
+import "./landing.css";
 import { SkipLink } from "@/components/SkipLink";
 import { ServanaExperience } from "@/components/ServanaExperience";
 

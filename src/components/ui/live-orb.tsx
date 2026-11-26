@@ -72,7 +72,7 @@ function makeShader(gl: WebGLRenderingContext, type: number, source: string) {
   return shader;
 }
 
-export function LiveOrb({ className, size = 360, color, colors, eyeColor = "#090b0d", interactive = true, blink = true, label = "A responsive Servana orb looking toward the pointer" }: LiveOrbProps) {
+export function LiveOrb({ className, size = 360, color, colors, eyeColor = "#090b0d", interactive = true, blink = true, label = "A responsive Sarvana orb looking toward the pointer" }: LiveOrbProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ready, setReady] = useState(false);
   const bodyColor = color ?? colors?.[1] ?? "#f1f0ea";

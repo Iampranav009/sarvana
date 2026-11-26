@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import sharp from 'sharp';
+const ids=['381d6479-f5b5-49ca-82f3-474c87c62996','9df39fca-20db-4273-bf7e-488d04a13321','3c8ee64a-67b3-4a2c-84d5-c665c725e7c5','3ccafa92-f479-4885-a6fb-0af92993b7f6','735686b6-9bd5-4ab1-9fe6-59c50b5e2eb0','3f775475-8920-4f55-b7c1-16bf192a0b1f','b56ceaf5-7fb3-40a2-bb1a-d41c547c71ca','4bd0452d-b321-4488-b57a-0c52dc73ceb1','5d3553c5-a46f-4238-bcb5-02ff60b0f907','6669baf9-e6d8-476b-abd4-e3d52517aee8','2a2fffcb-9e4e-4610-a2ec-c2c334e29001','742a5c0b-c77f-4ab3-96eb-dbca387f5ff8','da0b3073-d6fd-46d2-a1f6-747fbfedf2b1','d9738cd5-9685-47c4-9eab-e004c4d83776','706557e0-8408-4b07-bcab-2968cf4c493e'];
+const root=path.resolve(import.meta.dirname,'../public/footer/people');await fs.mkdir(root,{recursive:true});const manifest=[];
+for(let i=0;i<ids.length;i++){const source=`https://floo.design/api/a/${ids[i]}.svg`;const response=await fetch(source);if(!response.ok)throw new Error(`${response.status} ${source}`);const svg=Buffer.from(await response.arrayBuffer());const filename=`person-${String(i+1).padStart(2,'0')}.webp`;const result=await sharp(svg).resize({width:320}).webp({quality:88}).toFile(path.join(root,filename));manifest.push({source,file:filename,bytes:result.size});}
+await fs.writeFile(path.join(root,'sources.json'),JSON.stringify(manifest,null,2)+'\n');console.log({images:manifest.length,totalBytes:manifest.reduce((sum,item)=>sum+item.bytes,0)});
