@@ -8,6 +8,14 @@ const links = [['Our work', '/#work'], ['Services', '/#practice'], ['Creative', 
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const update = () => setScrolled(window.scrollY > 32);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, []);
   const toggle = useRef<HTMLButtonElement>(null);
   const menu = useRef<HTMLDivElement>(null);
   const close = () => { setOpen(false); toggle.current?.focus(); };
@@ -33,7 +41,7 @@ export function SiteHeader() {
   }, [open]);
 
   return <>
-    <header className="floating-nav is-solid" aria-label="Sarvana navigation">
+    <header className={`floating-nav is-solid${scrolled || open ? ' is-scrolled' : ''}`} aria-label="Sarvana navigation">
       <Link className="brand-mark" href="/" aria-label="Sarvana home" onClick={() => setOpen(false)}><Wordmark priority/></Link>
       <nav className="desktop-nav" aria-label="Main navigation">{links.map(([label, href]) => <Link key={label} href={href}>{label}</Link>)}</nav>
       <Link className="nav-cta" href="/contact" onClick={() => setOpen(false)}>Start a project <i aria-hidden="true">↗</i></Link>

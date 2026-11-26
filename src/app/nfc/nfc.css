@@ -17,3 +17,9 @@
 @media(prefers-reduced-motion:reduce){.nfc-shell *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.nfc-will-reveal{opacity:1;transform:none}}
 
 @media(max-width:760px){.nfc-feature-grid{grid-template-columns:1fr;gap:14px}.nfc-feature-grid li{padding:22px;gap:18px}.nfc-feature-grid h3{font-size:18px}}
+
+/* Match the service hero artwork framing without cropping the cards. */
+.nfc-hero-concept{margin:0;min-height:0;padding-bottom:28px}
+.nfc-hero-concept .nfc-hero-image{aspect-ratio:3/2;transform:none;animation:none;overflow:hidden;border-radius:18px}
+.nfc-hero-concept .nfc-hero-image>img{display:block;width:100%;height:auto}
+.nfc-hero-concept .nfc-art-label{font-size:10px}

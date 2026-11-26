@@ -6,7 +6,7 @@
 .mobile-menu nav{width:100%;max-width:640px;margin:0 auto}
 .mobile-menu a{font-size:clamp(28px,7.5vw,48px)}
 .mobile-menu a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.nfc-shell{padding-top:110px}
+.nfc-shell{padding-top:0}.nfc-nav-space{height:110px;background:var(--ink)}
 body>.business-section{padding-top:150px;width:100%}
 body>.contact-page{padding-top:150px}
 .studio-footer{flex-shrink:0}
@@ -86,7 +86,7 @@ body>.contact-page{padding-top:150px}
 @media(max-width:767px){
  .floating-nav{top:14px;width:calc(100% - 28px);padding-left:18px;height:64px;gap:8px}
  .floating-nav .nav-cta,.floating-nav .desktop-nav{display:none}.floating-nav .menu-toggle{display:block}
- .nfc-shell{padding-top:100px}body>.contact-page,body>.business-section{padding-top:125px}
+ .nfc-shell{padding-top:0}.nfc-nav-space{height:100px}body>.contact-page,body>.business-section{padding-top:125px}
  .studio-section-heading{grid-template-columns:1fr;gap:20px;margin-bottom:28px}.studio-section-heading>p{justify-self:start;max-width:480px;font-size:15px}
  .studio-service-card,.website-service-card{padding:23px}.studio-service-card h3,.website-service-card h3{font-size:21px}
  .studio-faq{grid-template-columns:1fr;gap:32px}.studio-faq-list summary{font-size:16px;padding:21px 0}
@@ -127,3 +127,6 @@ body>.contact-page{padding-top:150px}
 .landing-page .process-grid p{font-size:14px;line-height:1.75}
 @media(max-width:900px){.landing-page .process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.landing-page .process-grid{grid-template-columns:1fr}}
+
+/* Only the homepage opens with navigation over its dark hero. */
+body:has(.landing-page) .floating-nav:not(.is-scrolled){background:transparent;box-shadow:none;border-color:transparent}
